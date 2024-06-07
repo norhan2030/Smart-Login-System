@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css"
+    integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="">
+
+    <nav
+        class="navbar navbar-expand-sm navbar-dark bg-dark"
+    >
+        <div class="container">
+            <a class="navbar-brand" href="#">Login System</a>
+            <button
+                class="navbar-toggler d-lg-none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link user-nsme" href="#"></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="dropdownId"
+                            data-bs-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            >Dropdown</a
+                        >
+                        <div
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownId"
+                        >
+                            <a class="dropdown-item update-info" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                >Update info</a
+                            >
+                            <a class="dropdown-item Logout" href="#"
+                                >Logout</a
+                            >
+                        </div>
+                    </li>
+                </ul>
+               
+            </div>
+        </div>
+    </nav> 
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog bg-dark">
+      <div class="modal-content bg-dark">
+        <div class="modal-header bg-dark">
+          <h5 class="modal-title text-white" id="staticBackdropLabel">Update Info</h5>
+          <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-dark">
+            <input required type="text" id="name" placeholder="Enter your name" class="w-100 border rounded p-2  bg-color">
+            <p class="text-start ps-2 text-white name"></p>
+            <input required type="email" name="" id="email" placeholder="Enter your email" class="w-100 border rounded p-2  bg-color">
+            <p class="text-start ps-2 text-white email"></p>
+            <div class="position-relative">
+             <input required type="password" name="" id="password" placeholder="Enter your password" class=" w-100 border rounded p-2 mb-2 bg-color">
+            <i class="fa-regular fa-eye position-absolute "></i>
+            </div>
+            <p class="text-start ps-2 text-white password"></p>
+        </div>
+        <div class="modal-footer bg-dark">
+          <button type="button" class="btn btn-secondary close_btn" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary ubdate-data">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade "  id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content ">
+        <div class="modal-header ">
+          <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body ">
+            <div class=" position-relative ">
+                <!-- <img  class="w-100 popimg" alt="" height=""> -->
+                <div class="w-100 popimg">
+
+                </div>
+                <div class=" position-absolute p-2 top-0 d-flex justify-content-between w-100 h-100 align-items-center">
+                <i class="fa-solid fa-caret-left pre"></i>
+                <!-- <i class="fa-regular fa-circle-xmark  position-absolute "></i> -->
+
+                <i class="fa-solid fa-caret-right next"></i>
+                </div>
+            </div>  
+        </div>
+       
+      </div>
+    </div>
+  </div>
+    <div id="home" class="">
+        <div class="container py-4">
+            <div class="row  px-5 box gy-4">
+                
+               
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog bg-dark">
+          <div class="modal-content bg-dark">
+            <div class="modal-header bg-dark">
+              <h5 class="modal-title text-white" id="staticBackdropLabel">Update Info</h5>
+              <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg-dark">
+                <input required type="file" id="img" placeholder=" " class="w-100 border rounded p-2 form-control bg-color">
+                <p class="text-start ps-2 text-white imgg"></p>
+                <input required type="text" name="" id="nameProduct" placeholder="" class="w-100 form-control border rounded p-2  bg-color">
+                <p class="text-start ps-2 text-white namee"></p>
+               
+            </div>
+            <div class="modal-footer bg-dark">
+              <button type="button" class="btn btn-secondary close_shange" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary update-product">Update</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- <div class="upp d-flex justify-content-center align-items-center ">
+        <div class="w-25 ">
+            <div class=" position-relative ">
+                <img src="1.jpg" class="w-100 " alt="">
+                <div class=" position-absolute p-2 top-0 d-flex justify-content-between w-100 h-100 align-items-center">
+                <i class="fa-solid fa-caret-left"></i>
+                <i class="fa-regular fa-circle-xmark  position-absolute "></i>
+
+                <i class="fa-solid fa-caret-right"></i>
+                </div>
+            </div>            
+            
+        </div>
+    </div> -->
+    <!-- <script src="js/login.js"></script> -->
+    <!-- <script src="js/register.js"></script> -->
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
